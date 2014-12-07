@@ -1,79 +1,99 @@
 <!--Navbar -->
-<div>
-  <a class="logo" href="#">Progate</a>
-  <ul>
-    <li>ENG</li>
-    <li>ログイン</li>
+<div class="navbar navbar-inverse">
+  <div class="container">
+  <a class="logo pull-left" href="#">Progate</a>
+  <ul class="pull-right">
+    <li><a href="#">ENG</a></li>
+    <li><a href="#">ログイン</a></li>
   </ul>
+  </div>
 </div>
 <!-- End navbar -->
 
 <!-- Jumbotron -->
-<div>
+<div class="jumbotron">
+  <div class="container">
   <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
   <p>スライド学習と実践でマスター！<br>無料で学べる、初心者のためのオンラインプログラミング学習サービス</p>
   <p>
-    <a href="#">新規登録</a>
-    <a href="#">さらに詳しく</a>
+    <a class="btn btn-primary" href="#">新規登録</a>
+    <a class="btn btn-default" href="#">さらに詳しく</a>
   </p>
   <small>既にアカウントをお持ちですか? ログイン</small>
+  </div>
 </div><!-- End Jumbotron -->
 
 <!-- Main Content -->
-<div>
-  <div>
-  <h2>Hello, World!</h2>
-  <small>ようこそプログラミングの世界へ</small>
-  <h3>HTML&amp;CSS</h3>
-  <p>
-    ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。
-  </p>
-    <h3>jQuery</h3>
-    <p>素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-    <h3>Ruby</h3>
-    <p>オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。 気軽に楽しくプログラミングできて、しかも実用的です。 大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-</div>
+<div class="container">
+  <div class="row">
+      <div>
+        <div class="page-header">
+          <h2>Hello, World!</h2>
+          <small class="subtitle">ようこそプログラミングの世界へ</small>
+        </div>
+      <div class="col-md-4">
+        <h3>HTML&amp;CSS</h3>
+        <p>
+          ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3>jQuery</h3>
+        <p>素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Ruby</h3>
+        <p>オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。 気軽に楽しくプログラミングできて、しかも実用的です。 大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+      </div>
+    </div>
+  
+      <div>
+        <div class="page-header">
+          <h2>The Masterminds Behind this Project</h2>
+          <small class="subtitle">プロジェクトチーム</small>
+        </div>
+      <ul>
+         <li><%= image_tag('jobs.png', :alt => 'Steve Jobs', :class => "img-circle") %>Hustler</li>
+         <li><%= image_tag('woz.png', :alt => 'Steve Wozniak', :class => "img-circle") %>Hacker</li>
+         <li><%= image_tag('ive.png', :alt => 'Jonny Ive', :class => "img-circle") %>Designer</li>
+       </ul> 
+     </div>
+    </div><!-- End Main Content -->
 
-  <div>
-    <h2>The Masterminds Behind this Project</h2>
-  <small>プロジェクトチーム</small>
-  <ul>
-     <li>Hustler</li>
-     <li>Hacker</li>
-     <li>Designer</li>
-   </ul> 
- </div>
-</div><!-- End Main Content -->
-
-<!-- Call to Action -->
-<div>
-  <h3>あなたが思っているよりも簡単です。</h3>
-  <h3>Let's learn to code, learn to be creative!</h3>
-  <a href="#">さっそく開発する</a>
-</div><!-- End Call to Action -->
-
-<!-- Footer -->
-<div>
-  <a href="#">Progate</a>
-  <p>Learn to Code, Learn to be Creative.</p>
-
-  <div>
-    <h4>CREATE FREE ACCOUNT</h3>
-    <h4>VIEW LESSONS</h4>
-    <p>HTML &amp; CSS</p>
-    <p>jQuery</p>
-    <p>Ruby</p>
-    <p>PHP</p>
+    <!-- Call to Action -->
+    <hr>
+    <div>
+      <h3>あなたが思っているよりも簡単です。</h3>
+      <h3>Let's learn to code, learn to be creative!</h3>
+      <a href="#">さっそく開発する</a>
+    </div><!-- End Call to Action -->
   </div>
-
-  <div>
-    <h4>SUPPORT</h4>
-    <p>Contact</p>
-    <p>FAQ</p>
-    <p>Terms of Use</p>
-    <p>Privacy Policy</p>
+    <!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#">Progate</a>
+        <p>Learn to Code, Learn to be Creative.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>CREATE FREE ACCOUNT</h3>
+        <h4>VIEW LESSONS</h4>
+        <p>HTML &amp; CSS</p>
+        <p>jQuery</p>
+        <p>Ruby</p>
+        <p>PHP</p>
+      </div>
+      <div class="col-md-4">
+        <h4>SUPPORT</h4>
+        <p>Contact</p>
+        <p>FAQ</p>
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+      </div>
+      <hr>
+      <p>&copy; 2014 Progate. Inc</p>
+    </div>
+    </div>
+  <!-- End Footer -->
   </div>
-  <hr>
-  <p>&copy; 2014 Progate. Inc</p>
-</div>
-<!-- End Footer -->
