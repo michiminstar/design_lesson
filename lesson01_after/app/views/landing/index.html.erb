@@ -6,7 +6,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Progate</a>
+    <a class="navbar-brand text-muted" href="#">Progate</a>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -28,22 +28,22 @@
 <!-- Jumbotron -->
 <div class="jumbotron">
   <div class="container">
-  <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-  <p>スライド学習と実践でマスター！<br>無料で学べる、初心者のためのオンラインプログラミング学習サービス</p>
-  <p>
-    <a class="btn btn-primary btn-lg" href="#">新規登録</a>
-    <a class="btn btn-default btn-lg" href="#">さらに詳しく</a>
-  </p>
-  <small>既にアカウントをお持ちですか? <a href="#">ログイン</a></small>
+    <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
+    <p class="lead">スライド学習と実践でマスター！<br>無料で学べる、初心者のためのオンラインプログラミング学習サービス</p>
+    <p>
+      <a class="btn btn-primary btn-lg" href="#">新規登録</a>
+      <a class="btn btn-default btn-lg" href="#">さらに詳しく</a>
+    </p>
+    <small class="login-link">既にアカウントをお持ちですか? <a href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true">ログイン</span></a></small>
   </div>
 </div><!-- End Jumbotron -->
 
 <!-- Main Content -->
-<div class="container">
+<div class="main-content container">
   <div class="row">
-    <div>
+    <div class="heading">
       <h2>Hello, World!</h2>
-      <small>ようこそプログラミングの世界へ</small>
+      <small class="subtitle">ようこそプログラミングの世界へ</small>
     </div>
     <div class="col-md-4">
       <h3>HTML&amp;CSS</h3>
@@ -59,13 +59,17 @@
       <h3>Ruby</h3>
       <p>オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。 気軽に楽しくプログラミングできて、しかも実用的です。 大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
     </div>
-    <h2>The Masterminds Behind this Project</h2>
-    <small class="subtitle">プロジェクトチーム</small>
-    <ul>
-       <li><%= image_tag('jobs.jpg', :alt => 'Steve Jobs', :class => "img-circle") %>Hustler</li>
-       <li><%= image_tag('woz.jpg', :alt => 'Steve Wozniak', :class => "img-circle") %>Hacker</li>
-       <li><%= image_tag('ive.jpg', :alt => 'Jonny Ive', :class => "img-circle") %>Designer</li>
-    </ul>
+    <div>
+        <div class="heading">
+          <h2>The Masterminds Behind this Project</h2>
+          <small class="subtitle">プロジェクトチーム</small>
+        </div>
+        <ul>
+           <li><%= image_tag('jobs.jpg', :alt => 'Steve Jobs', :class => "img-circle") %>Hustler</li>
+           <li><%= image_tag('woz.jpg', :alt => 'Steve Wozniak', :class => "img-circle") %>Hacker</li>
+           <li><%= image_tag('ive.jpg', :alt => 'Jonny Ive', :class => "img-circle") %>Designer</li>
+        </ul>
+    </div>
   </div><!-- End Main Content -->
 
   <!-- Call to Action -->
@@ -85,24 +89,24 @@
         <a href="#">Progate</a>
         <p>Learn to Code, Learn to be Creative.</p>
       </div>
-      <div class="col-md-4">
-        <h4>CREATE FREE ACCOUNT</h3>
+      <div class="col-md-4 col-md-offset-2">
+        <h4>CREATE FREE ACCOUNT</h4>
         <h4>VIEW LESSONS</h4>
         <p>HTML &amp; CSS</p>
         <p>jQuery</p>
         <p>Ruby</p>
         <p>PHP</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-2">
         <h4>SUPPORT</h4>
         <p>Contact</p>
         <p>FAQ</p>
         <p>Terms of Use</p>
         <p>Privacy Policy</p>
       </div>
-      <hr>
-      <p>&copy; 2014 Progate. Inc</p>
     </div>
+     <hr>
+    <p>&copy; 2014 Progate. Inc</p>
     </div>
   <!-- End Footer -->
-  </div>
+</div>
